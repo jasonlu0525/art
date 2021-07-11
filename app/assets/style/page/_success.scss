@@ -1,0 +1,16 @@
+.success{
+
+height: calc( 100vh - 123px );
+@include pad-768{
+    height: calc( 100vh - 109px );
+}
+&-circle{
+    fill: $red-300;
+}
+    &-text{
+        margin-bottom: 76px;
+        @include pad-768{
+            margin-bottom: 92px;
+        }
+    }
+}

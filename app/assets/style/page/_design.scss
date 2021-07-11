@@ -1,0 +1,8 @@
+.design-link-photo {
+    height: 221px;
+    width: 100%;
+
+    @include pad-768 {
+        height: 285px;
+    }
+}

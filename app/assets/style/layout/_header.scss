@@ -1,0 +1,107 @@
+.menu {
+    top: 33.783%;
+    right: 15px;
+
+    @include pad-768 {
+        top: 25%;
+    }
+
+    @include pc-992 {
+        right: 74px;
+    }
+
+}
+
+.cart {
+    display: none;
+    z-index: 999;
+    width: 100%;
+  
+    @include pad-768 {
+        max-width: 540px;
+
+    }
+
+    &-list {
+        max-height: 416px;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        @include pad-768 {
+            max-height: 100%;
+            overflow-y: visible;
+        }
+
+        &::-webkit-scrollbar {
+            width: 8px;
+
+        }
+
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+
+
+            border-left: 4px solid transparent;
+            background-clip: padding-box;
+            background-color: white;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: $red-100;
+            border-left: 4px solid transparent;
+            background-clip: padding-box;
+
+        }
+
+
+        &-title {
+            font-size: $h4-font-size;
+
+            @include pad-768 {
+                font-size: $h2-font-size;
+            }
+        }
+
+        &-amount-input {
+            width: 22px;
+            height: 22px;
+        }
+
+        &-close-btn {
+            top: 4px;
+            left: 4px;
+        }
+    }
+
+}
+
+
+.cart-cover-bg {
+    display: none;
+    top: 80px;
+    left: 0;
+    height: calc(100vh - 80px);
+    z-index: 998;
+}
+
+
+
+.x-noScrollbar {
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.nav-items {
+    border-bottom: 1px solid transparent;
+    transition: all ease-in .2s;
+    overflow-x: auto;
+
+    &:hover {
+        border-bottom-color: $red-100;
+    }
+}
