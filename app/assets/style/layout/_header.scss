@@ -16,7 +16,7 @@
     display: none;
     z-index: 999;
     width: 100%;
-  
+
     @include pad-768 {
         max-width: 540px;
 
@@ -28,8 +28,7 @@
         overflow-y: auto;
 
         @include pad-768 {
-            max-height: 100%;
-            overflow-y: visible;
+            // max-height: 100%;
         }
 
         &::-webkit-scrollbar {
@@ -43,7 +42,7 @@
 
 
             border-left: 4px solid transparent;
-            background-clip: padding-box;
+            background-clip: content-box;
             background-color: white;
         }
 
