@@ -1,6 +1,7 @@
 img {
     max-width: 100%;
-    display: block;
+    object-fit: cover;
+    vertical-align: middle;
 }
 
 a {
@@ -12,6 +13,19 @@ a {
         color: inherit;
     }
 
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 // h1,
@@ -29,4 +43,3 @@ a {
 //     font-weight: bold;
 //     line-height: 1.5;
 // }
-

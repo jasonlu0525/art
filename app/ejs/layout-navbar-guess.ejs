@@ -6,11 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%- title %></title>
-
-    <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css" integrity="sha512-IZyebVAIO5IWMM3Jcx/Z0awNNBq1YcqWW34QlhQy9fzM1XxzmX3gB/YmbPkVuH/EU8QvpeY92EGS45iW/YKt1g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css">
     <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -127,28 +124,21 @@
         </header>
       </div>
     <div class="bg-gray-700 position-absolute vw-100 cart-cover-bg d-md-none"></div>
-    <nav class="navBar  border-bottom border-gray-500 text-NotoSansCJKtc-Regular ">
-        <ul class="d-flex container x-noScrollbar text-gray-500 w-100 ps-0 list-unstyled justify-content-md-center mb-0 ">
-            <li class="py-2"><a href="#" class="nav-items px-4 text-nowrap ">音樂</a></li>
-            <li class="py-2"><a href="#" class="nav-items px-4  text-nowrap ">戲劇</a></li>
-            <li class="py-2"><a href="design.html" class="nav-items px-4 text-nowrap ">設計</a></li>
-            <li class="py-2"><a href="#" class="nav-items px-4 text-nowrap ">藝術</a></li>
-            <li class="py-2"><a href="#" class="nav-items px-4 text-nowrap ">美食</a></li>
-            <li class="py-2"><a href="#" class="nav-items px-4 text-nowrap ">旅遊</a></li>
-            <li class="py-2"><a href="#" class="nav-items px-4 text-nowrap ">電影</a></li>
-            <li class="py-2"><a href="#" class="nav-items px-4 text-nowrap ">親子</a></li>
-            <li class="py-2"><a href="#" class="nav-items px-4 text-nowrap ">期間限定</a></li>
-        </ul>
-    </nav>
+    <%- include("./navbar"); %>
 
 
 
+    <%- contents %>
 
     <div class="container ">
-
-        <%- contents %>
-
+        <!-- 猜你也喜歡... -->
+        <section class="mb-4 mb-md-5">
+          <h2 class="title mb-4 text-NotoSansCJKtc-Bold">猜你也喜歡...</h2>
+       
+        <%- include('./guess'); -%>
+        </section>
     </div>
+
 
 
     <footer class="footer">
@@ -160,7 +150,7 @@
                 <form action="#" method="POST">
                   <div class="input-group input-group-lg ">
                     <input type="text" placeholder="輸入您的電子信箱"
-                      class="form-control rounded-0 rounded-start fs-5 border border-gray-200 text-NotoSansCJKtc-Regular "><input type="submit"
+                      class="form-control rounded-0 rounded-start fs-5 border border-gray-200 text-NotoSansCJKtc-Regular" name="email"><input type="submit"
                       value="訂閱" class="input-group-text  fs-5 px-5 bg-red-100 text-white border border-red-100 text-NotoSansCJKtc-Regular">
                   </div>
                 </form>
@@ -191,6 +181,7 @@
     
     
       </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js" integrity="sha512-jm5exnXjOC6mBpqBG81xU+GK4ybKq28mLihDCNj2E3RkzrfW/tSGt7Uy7wRSkedl95C4cH9+9lectBCGwEcD0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script src="./assets/js/all.js"></script>

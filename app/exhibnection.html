@@ -1,9 +1,10 @@
 ---
 title: 2020 台味設計展
-layout: ./app/layout-navbar-guess.ejs
+layout: ./app/ejs/layout-navbar-guess.ejs
 engine: ejs
 current: index
 ---
+
 <div class="container py-5">
     <div class="row mb-5">
         <div class="col-12 col-md-5 col-lg-6 mb-5 mb-md-0">
@@ -31,7 +32,7 @@ current: index
             <div class=" d-flex justify-content-center align-items-center h-100 exh-md-border-end  exh-grid-column--1-4">
                 <div class="mb-4">
                     <a href="#" class="material-icons">remove</a>
-                    <input type="text" name="amount" id="amount" value="01" class="border-0 exh-amount-input fs-1 p-0 mx-3 text-Roboto-Bold ">
+                    <input type="number" name="amount" id="amount" value="01" class="border-0 exh-amount-input fs-1 p-0 mx-3 text-Roboto-Bold ">
                     <a href="#" class="material-icons">add</a>
                     <p class=" mt-3 text-NotoSansCJKtc-Light ">張</p>
                 </div>
@@ -45,13 +46,13 @@ current: index
                     <h2 class="mb-3 fs-1  text-Roboto-Bold ">NT$350</h2>
                     <p class=" mb-2 text-NotoSansCJKtc-Light ">票種</p>
                     <div class="btn-group  text-NotoSansCJKtc-Regular " role="group" aria-label="Basic checkbox toggle button group">
-                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                        <input type="checkbox" class="btn-check" id="student" autocomplete="off">
                         <label class="btn ticket-identity  clicked" for="student">學生</label>
 
-                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                        <input type="checkbox" class="btn-check" id="adult" autocomplete="off">
                         <label class="btn ticket-identity " for="adult">全票</label>
 
-                        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                        <input type="checkbox" class="btn-check" id="half" autocomplete="off">
                         <label class="btn ticket-identity " for="half">愛心</label>
                     </div>
                 </div>
